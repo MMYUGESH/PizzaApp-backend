@@ -4,6 +4,8 @@ require("dotenv").config();
 const mongoClient = mongodb.MongoClient;
 const objectId = mongodb.ObjectID;
 const app = express();
+var cors = require('cors') 
+app.use(cors())
 
 //const dbUrl = "mongodb://127.0.0.1:27017";
 //const Db_URL ="mongodb+srv://pizzamenu:bz39BkYJzgAOOQAH@pizzamenu.t0hnk.mongodb.net/pizza?retryWrites=true&w=majority"
